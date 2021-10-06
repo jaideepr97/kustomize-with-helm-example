@@ -1,0 +1,14 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: terraform
+name: terraform
+version: 1.0.0
+repo: https://helm.releases.hashicorp.com
+releaseName: terraforming-mars
+includeCRDs: true
+valuesInline:
+  global:
+    enabled: false
+  tests:
+    enabled: false
